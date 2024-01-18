@@ -1,0 +1,203 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #d7d7d7;
+  height: auto;
+  background: #EEEEEE;
+  .left {
+    width: 10%;
+  }
+  .content {
+    width: 55%;
+    background: #FFFFFF;
+    .blog {
+      padding: 0.5rem 1rem 1rem 1rem;
+      .title {
+        line-height: 1.5;
+        font-size: 1.8rem;
+        font-weight: 600;
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: left;
+        color: #212529;
+      }
+      .info {
+        font-size: 0.8rem;
+        color: #6c757d;
+        .username {
+          cursor: pointer;
+        }
+        .username:hover {
+          text-decoration: underline;
+          color: #1890ff;
+        }
+      }
+      .operate {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+        div {
+          margin-right: 1rem;
+          cursor: pointer;
+        }
+      }
+      .text {
+        :global {
+          .for-container {
+            height: auto !important;
+            img {
+              max-width: 90%;
+              margin: 0 0;
+            }
+          }
+        }
+      }
+      .footer {
+        color: #999;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+      }
+    }
+    .submitComment {
+      padding: 1rem 1rem;
+      background-color: #fafbfc;
+      display: flex;
+      flex-direction: row;
+      .image {
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+      }
+    }
+    .commentList {
+      padding: 0 1rem;
+      .comment {
+        position: relative;
+        padding-top: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        .pick {
+          position: absolute;
+          right: -11%;
+          top: 7%;
+        }
+        .image {
+          border-radius: 50%;
+          width: 2rem;
+          height: 2rem;
+          margin-right: 1rem;
+        }
+        .username {
+          color: #6c757d;
+          font-size: 0.8rem;
+        }
+        .content {
+          width: 100%;
+          margin: 1rem 0;
+          color: #505050;
+          font-size: 0.8rem;
+        }
+        .footer {
+          color: #6c757d;
+          padding-bottom: 0.5rem;
+          display: flex;
+          font-size: 0.7rem;
+          flex-direction: row;
+          justify-content: space-between;
+          .button {
+            display: flex;
+            flex-direction: row;
+          }
+        }
+        .reply {
+          background-color: #fafbfc;
+          padding: 0 1rem;
+          .content {
+            background: #fafbfc;
+          }
+        }
+      }
+    }
+    .pagination {
+      width: 100%;
+      padding: 1rem;
+      text-align: right;
+    }
+  }
+  .side {
+    width: 25%;
+    margin-left: 1rem;
+    .author {
+      background-color: #FFFFFF;
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 0;
+      .image {
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        margin-top: 0.5rem;
+      }
+      .name {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #000000de;
+        margin-top: 0.5rem;
+        cursor: pointer;
+      }
+      .name:hover {
+        text-decoration: underline;
+        color: #1890ff;
+      }
+      .attention {
+        margin: 0.5rem 0;
+        background-color: #28a745;
+        padding: 0.5rem 2rem;
+        color: #FFFFFF;
+        display: inline-block;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .notAttention {
+        margin: 0.5rem 0;
+        background-color: #5a6268;
+        padding: 0.5rem 2rem;
+        display: inline-block;
+        color: #FFFFFF;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+    .quickArticle {
+      margin-top: 1.5rem;
+      .quickArticleItem {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .name {
+          color: #212529;
+          max-width: 55%;
+          cursor: pointer;
+          overflow: hidden;				//溢出内容隐藏
+          text-overflow: ellipsis;		//文本溢出部分用省略号表示
+          white-space: nowrap
+        }
+        .name:hover {
+          color: #28a745;
+          text-decoration: underline;
+        }
+        .date {
+          color: #6c757d;
+        }
+      }
+    }
+  }
+  .right {
+    width: 10%;
+  }
+}

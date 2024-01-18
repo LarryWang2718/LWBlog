@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #d7d7d7;
+  height: auto;
+  background: #EEEEEE;
+  .left {
+    width: 10%;
+  }
+  .content {
+    width: 55%;
+    background: #FFFFFF;
+    .category {
+      padding: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+      border-bottom: 1px solid #d7d7d7;
+      align-content: flex-start;
+      .selectItem {
+        background-color: #28a745;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+      .item {
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        color: #212529;
+        cursor: pointer;
+      }
+    }
+    .pagination {
+      padding: 1rem;
+      width: 100%;
+      text-align: right;
+    }
+  }
+  .side {
+    width: 25%;
+    margin-left: 1rem;
+    .quick {
+      justify-content: space-around;
+      background-color: #FFFFFF;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      padding: 1.5rem 0;
+      .leftButton {
+        background-color: #28a745;
+        padding: 0.7rem 2rem;
+        margin: 0.5rem;
+        color: #FFFFFF;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .rightButton {
+        padding: 0.7rem 2rem;
+        margin: 0.5rem;
+        color: #28a745;
+        border: 1px solid #28a745;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+    .image {
+      margin-top: 1.5rem;
+    }
+    .quickArticle {
+      margin-top: 1.2rem;
+      .quickArticleItem {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .name {
+          color: #212529;
+          max-width: 55%;
+          cursor: pointer;
+          overflow: hidden;				//溢出内容隐藏
+          text-overflow: ellipsis;		//文本溢出部分用省略号表示
+          white-space: nowrap
+        }
+        .name:hover {
+          color: #28a745;
+          text-decoration: underline;
+        }
+        .date {
+          color: #6c757d;
+        }
+      }
+    }
+  }
+  .right {
+    width: 10%;
+  }
+}

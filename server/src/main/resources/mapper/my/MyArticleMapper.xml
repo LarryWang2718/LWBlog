@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yjq.programmer.dao.my.MyArticleMapper">
+
+    <select id="getArticleTotalByDate" resultType="java.lang.Integer">
+        select count(*) as total from article where create_time > date_sub(curdate(), interval #{queryMap.start} day) and create_time &lt; date_sub(curdate(), interval #{queryMap.end} day)
+        and state != 6
+    </select>
+</mapper>

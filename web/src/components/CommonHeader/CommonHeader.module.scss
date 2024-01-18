@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0.5rem 3rem;
+  background: #F8F9FA;
+  .title {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    color: rgba(0,0,0,.7);
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    width: 35%
+  }
+  .menu {
+    :global{
+      .ant-tabs-bar {
+        margin: 0 !important;
+      }
+      .ant-tabs-tab {
+        font-size: 1rem;
+        padding: 0.1rem 1.2rem 0.8rem 1.2rem  !important;
+      }
+    }
+    width: 20%;
+    text-align: center;
+  }
+  .user {
+    display: flex;
+    flex-direction: row;;
+    width: 30%;
+    color: #000000b3;
+    justify-content: flex-end;
+    font-size: 1rem;
+    .button {
+      margin-top: 0.4rem;
+      width: 3rem;
+      cursor: pointer;
+    }
+  }
+  .loginUser {
+    display: flex;
+    flex-direction: row;
+    .name {
+      margin-top: 0.4rem;
+      margin-left: 0.5rem;
+    }
+  }
+}
